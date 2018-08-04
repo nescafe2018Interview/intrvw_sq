@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:element name="cmfoodchain" type="cmfoodchainType" />
+	<xs:complexType name="branchType">
+		<xs:sequence>
+			<xs:element type="xs:string" name="location" />
+			<xs:element type="xs:float" name="totalcollection" />
+			<xs:element type="xs:string" name="locationid" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="orderdetailType">
+		<xs:sequence>
+			<xs:element type="xs:byte" name="orderid" />
+			<xs:element type="xs:float" name="billamount" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ordersType">
+		<xs:sequence>
+			<xs:element type="orderdetailType" name="orderdetail"
+				maxOccurs="unbounded" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="cmfoodchainType">
+		<xs:sequence>
+			<xs:element type="branchType" name="branch" />
+			<xs:element type="ordersType" name="orders" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
