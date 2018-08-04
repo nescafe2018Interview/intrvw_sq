@@ -9,12 +9,13 @@ Section 2:
 	JDK Version: java version "1.7"
 
 Section 3 
-Sonar lint 
+
+a) SonarLint snapshot : https://github.com/nescafe2018Interview/intrvw_sq/blob/master/SonarLint_OP.PNG
 
 
-Final Output Snapshot 
-Junit Coverage Snapshot
-
+b) Final Output Snapshot : https://github.com/nescafe2018Interview/intrvw_sq/blob/master/Result1.PNG
+			https://github.com/nescafe2018Interview/intrvw_sq/blob/master/Matched_OP.PNG
+			https://github.com/nescafe2018Interview/intrvw_sq/blob/master/Mismatched_OP.PNG
 
 Section 4 
 
